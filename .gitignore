@@ -1,15 +1,11 @@
 import java.util.Scanner;
-class P8_2 {
+public class GST_calculate {
     public static void main(String[]args){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("\n------------ArrayIndexOutOfBoundsException-----------");
-        System.out.println("Enter the size of array:");
-        int n=sc.nextInt();
-        int[] arr=new int[n];
-        System.out.println("Enter a  the element:");
-        for(int i=0;i<n;i++){
-            System.out.println("arr["+i+"]=");
-            arr[i]=sc.nextInt();
-        }
+        Scanner ab=new Scanner(System.in);
+        System.out.print("Enter amount:");
+        double a=ab.nextFloat();
+        double b;
+        b=a + (a*0.18);
+        System.out.print("your GST include is"+b);
     }
 }
